@@ -1,0 +1,304 @@
+﻿<html>
+	<head> 
+		<title> CSS </title>
+		<style type="text/css">
+			body{
+			background:red;
+			}
+			#mainarea{
+			width:1200px;
+			height:1500px;
+			background:#FF0;
+			margin:0 auto;
+			}
+			#toparea{
+			width:1200px;
+			height:150px;
+			background:#0F0;
+			}
+			#logoarea{
+			width:150px;
+			height:150px;
+			background:brown;
+			float:left;
+			}
+			#titlearea{
+			width:1050px;
+			height:150px;
+			background:black;
+			float:left;
+			}
+			#menuarea{
+			width:1200px;
+			height:40px;
+			background:violet;
+			}
+			#menuarea ul li{
+			float:left;
+			}
+			#menuarea ul{
+			margin:0;
+			padding:0;
+			list-style:none;
+			}
+			#menuarea ul li a:link,#menuarea ul li a:visited{
+			color:red;
+			background:yellow;
+			text-decoration:none;
+			padding:10px 25px;
+			display:block;
+			border-right:solid 1px #000;
+			}
+			#menuarea ul li a:hover{
+			color:yellow;
+			background:red;
+			}
+			#menuarea ul li ul{
+			display:none;
+			}
+			#menuarea ul li:hover ul{
+			display:block;
+			position:absolute;
+			z-index:100;
+			}
+			#menuarea ul li:hover ul li{
+			float:none;
+			}
+			#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+			border-right:none;
+			border-bottom:solid 1px #000;
+			}
+			#slidearea{
+			width:1200px;
+			height:300px;
+			background:indigo;
+			float:left;
+			}
+			#b1{
+			width:1000px;
+			height:200px;
+			background:skyblue;
+			margin:50px 100px 50px 100px;
+			/*border-radius:0px 0px 0px 50px;*/
+			/*border-radius:50px 0;*/
+			border-radius:50px;
+			}
+			#b1 h1{
+			color:red;
+			}
+			#b1 p{
+			color:green;
+			/*font-weight:bold;
+			font-size:30px;
+			font-family:helvetica,arial;*/
+			font:200 20px arial;
+			font-style:oblique;
+			text-transform:uppercase;
+			text-align:center;
+			text-decoration:overline underline;
+			text-indent:50px;
+			letter-spacing:0px;
+			word-spacing:0px;
+			line-height:100px;
+			}
+
+			#boxarea{
+			width:1200px;
+			height:300px;
+			background:blue;
+			float:left;
+			}
+			#box1{
+			width:600px;
+			height:300px;
+			background:#29C8F3;
+			float:left;
+			}
+			#box2{
+			width:600px;
+			height:300px;
+			background:#A5ED26;
+			float:left;
+			}
+			#darea{
+			width:1200px;
+			height:300px;
+			background:orange;
+			}
+			#d1{
+			width:400px;
+			height:300px;
+			background:#26EDCC;
+			float:left;
+			}
+			#d2{
+			width:400px;
+			height:300px;
+			background:#26ED38;
+			/*background-image:linear-gradient(30deg,red 0%,red 50%,yellow 51%,yellow 100%);*/
+			/*background-image:repeating-linear-gradient(to right,red 0%,yellow 20%);*/
+			/*background-image:radial-gradient(circle,red 0%,yellow 20%,green 100%);*/
+			background-image:repeating-radial-gradient(circle,red 0%,yellow 20%);  
+			float:left;
+			}
+			#d3{
+			width:400px;
+			height:300px;
+			background:#ED26CF;
+			float:left;
+			}
+			#footarea{
+			width:1200px;
+			height:410px;
+			background:pink;
+			}
+			#f1{
+			width:300px;
+			height:410px;
+			background:#2641ED;
+			float:left;
+			}
+			#f1 ul{
+			/*list-style-type:square;
+			list-style-image:url('arr.png');
+			list-style-position:inside;*/
+			list-style:circle url('arr.png') inside;
+			}
+			#f2{
+			width:300px;
+			height:410px;
+			background:#D826ED;
+			float:left;
+			}
+			#f2 ul{
+			list-style-type:square;
+			margin:0;
+			padding:0;
+			}
+			#f3{
+			width:300px;
+			height:410px;
+			background:#26ED4A;
+			float:left;
+			}
+			#f3 a:link{
+			color:red;
+			}
+			#f3 a:visited{
+			color:green;
+			}
+			#f3 a:hover{
+			color:yellow;
+			}
+			#f3 a:active{
+			color:pink;
+			}
+			#f4{
+			width:300px;
+			height:410px;
+			background:#ED9926;
+			float:left;
+			}
+			#f4 ul{
+			margin:0;
+			padding:0;
+			list-style:none;
+			}
+			#f4 ul li a:link,#f4 ul li a:visited{
+			color:red;
+			background:yellow;
+			text-decoration:none;
+			padding:10px 25px;
+			display:block;
+			border-bottom:solid 1px #000;
+			}
+			#f4 ul li a:hover{
+			color:yellow;
+			background:red;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+				</div>
+				<div id="titlearea">
+				</div>
+			</div>
+			<div id="menuarea">
+					<ul>
+						<li> <a href="#"> HOME </a> </li>
+						<li>  <a href="#"> ABOUT </a> </li>
+						<li> <a href="#"> GALLERY  </a> </li>
+						<li>  <a href="#">  CONTACT </a> </li>
+						<li>  <a href="#">  PRODUCTS </a>
+							<ul>
+								<li> <a href="#"> PRODUCT 1 </a> </li>
+								<li> <a href="#"> PRODUCT 2 </a> </li>
+								<li> <a href="#"> PRODUCT 3 </a> </li>
+								<li> <a href="#">  PRODUCT 4 </a> </li>
+							</ul>
+ 						</li>
+
+					</ul>
+			</div>
+			<div id="slidearea">
+				<img src="Penguins.jpg" width="1200px" height="300px"/>
+			</div>
+			<div id="boxarea">
+				<div id="b1">
+					<h1>Hi.. everyone </h1>
+					<p> Mahendra Singh Dhoni (born 7 July 1981), is a former Indian international cricketer who captained the Indian na
+tional team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He is honorary Lieute
+nant Colonel with n</p>
+				</div>
+
+			</div>
+			<div id="darearea">
+				<div id="d1">
+				</div>
+				<div id="d2">
+				</div>
+				<div id="d3">
+				</div>
+			</div>
+			<div id="footarea">
+				<div id="f1">
+					<ul>
+						<li> HOME </li>
+						<li> ABOUT </li>
+						<li> GALLERY </li>
+						<li> CONTACT </li>
+						
+					</ul>
+				</div>
+				<div id="f2">
+					<ul>
+						<li> HOME </li>
+						<li> ABOUT </li>
+						<li> GALLERY </li>
+						<li> CONTACT </li>
+					</ul>
+				</div>
+				<div id="f3">
+					<ul>
+						<li> <a href="#"> HOME </a> </li>
+						<li>  <a href="#"> ABOUT </a> </li>
+						<li> <a href="#"> GALLERY  </a> </li>
+						<li>  <a href="#">  CONTACT </a> </li>
+					</ul>
+				</div>
+				<div id="f4">
+					<ul>
+						<li> <a href="#"> HOME </a> </li>
+						<li>  <a href="#"> ABOUT </a> </li>
+						<li> <a href="#"> GALLERY  </a> </li>
+						<li>  <a href="#">  CONTACT </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
